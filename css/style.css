@@ -518,7 +518,7 @@ body.nav-active .nav__list-item:nth-child(10) {
     font-style: normal;
 }
   .logo p{
-	text-decoration: 1px underline;
+	text-decoration: 1.5px underline;
 	padding-top: 20px;
   }
 

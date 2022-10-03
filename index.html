@@ -18,12 +18,14 @@
 
 </head>
 <body>
+                                                <!-- Header -->
     <div class="mainheader">
         <div class="dopmenu">
 
 
+                <!-- SecondMenu -->
 
-
+    
 
             <div class="header-wrapper">
                 <!-- <div class="logo-wrap">
@@ -49,42 +51,8 @@
                 </ul>
             </div>
         </div>		
-        <script>//Navigation
         
-            var app = function () {
-                var body = undefined;
-                var menu = undefined;
-                var menuItems = undefined;
-                var init = function init() {
-                    body = document.querySelector('body');
-                    menu = document.querySelector('.menu-icon');
-                    menuItems = document.querySelectorAll('.nav__list-item');
-                    applyListeners();
-                };
-                var applyListeners = function applyListeners() {
-                    menu.addEventListener('click', function () {
-                        return toggleClass(body, 'nav-active');
-                    });
-                };
-                var toggleClass = function toggleClass(element, stringClass) {
-                    if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
-                };
-                init();}();
-
-        </script>
-
-
-
-
-
-
-
-
-
-
-
-
-            
+            <!-- MainMenu -->
         </div>
             
             <div class="menu">
@@ -111,5 +79,7 @@
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js.map"></script>
     <script src="libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="libs/micromodal/micromodal.min.js"></script>
+    <!-- Скрипты -->
+    <script src="js/Navigation.js"></script>
 </body>
 </html>
