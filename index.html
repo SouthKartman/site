@@ -9,15 +9,99 @@
 
     <link rel="icon" href="logo.png">
 
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+    
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="libs/micromodal/micromodal.css">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
+    
+
 </head>
 <body>
     <div class="mainheader">
+        <div class="dopmenu">
+
+
+
+
+
+            <div class="header-wrapper">
+                <!-- <div class="logo-wrap">
+                    <a href="#" class="hover-target"><span>your</span>logo</a>
+                </div> -->
+                <div class="nav-but-wrap">
+                    <div class="menu-icon hover-target">
+                        <span class="menu-icon__line menu-icon__line-left"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line menu-icon__line-right"></span>
+                    </div>					
+                </div>					
+            </div>				
+        </header>
+        <div class="nav">
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__list-item active-nav"><a href="#" class="hover-target">Home</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Portfolio</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Studio</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">News</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Contact</a></li>
+                </ul>
+            </div>
+        </div>		
+        <script>//Navigation
         
+            var app = function () {
+                var body = undefined;
+                var menu = undefined;
+                var menuItems = undefined;
+                var init = function init() {
+                    body = document.querySelector('body');
+                    menu = document.querySelector('.menu-icon');
+                    menuItems = document.querySelectorAll('.nav__list-item');
+                    applyListeners();
+                };
+                var applyListeners = function applyListeners() {
+                    menu.addEventListener('click', function () {
+                        return toggleClass(body, 'nav-active');
+                    });
+                };
+                var toggleClass = function toggleClass(element, stringClass) {
+                    if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+                };
+                init();}();
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        </div>
+            
+            <div class="menu">
+                <ul>
+                    <li id="mainmenu"><a href="#">About</a></li>
+                    <li id="mainmenu"><a href="#">Portfolio</a></li>
+                    <li id="mainmenu"><a href="#">Blog</a></li>
+                    <li id="mainmenu" ><a href="#">Contact</a></li>
+                    
+                    
+                  </ul>
+            </div>
+            
+            <div class="logo">
+                <p id="logo">Social Beach</p>
+                
+            </div>
     </div>
 
 
