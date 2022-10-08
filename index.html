@@ -7,6 +7,7 @@
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Parallax.css">
+    <link rel="stylesheet" href="css/preloader.css">
 
     <link rel="icon" href="logo.png">
 
@@ -14,13 +15,24 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="libs/micromodal/micromodal.css">
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
     
 
 </head>
 <body>
 
-    <!-- Header -->
+                                      <!-- Preloader -->
+
+<div class="preloader">
+  
+    <div class="programmer"></div>
+<q><i>Programmer</i> is just a tool which converts caffeine to code.</q>
+  
+  
+</div>
+
+
+                                                            <!-- Header -->
     <div class="mainheader">
         <div class="dopmenu">
 
@@ -58,11 +70,11 @@
         </div>
             
             <div class="menu">
-                <ul>
-                    <li id="mainmenu"><a href="#">About</a></li>
-                    <li id="mainmenu"><a href="#">Portfolio</a></li>
-                    <li id="mainmenu"><a href="#">Blog</a></li>
-                    <li id="mainmenu" ><a href="#">Contact</a></li>
+                <ul class="menu_ul_main">
+                    <li id="mainmenu"><a class="menu_but" href="#">About</a></li>
+                    <li id="mainmenu"><a class="menu_but" href="#">Portfolio</a></li>
+                    <li id="mainmenu"><a class="menu_but" href="#">Blog</a></li>
+                    <li id="mainmenu"><a class="menu_but" href="#">Contact</a></li>
                     
                     
                   </ul>
@@ -75,7 +87,7 @@
     </div>
     <div class="body">                                            <!-- BODY -->
 
-<div class="shadow-title parallax-top-shadow">work</div>
+<div class="shadow-title parallax-top-shadow">Work</div>
 <div class="section-parallax parallax-00" style="background-image: url('http://www.ivang-design.com/svg-load/parallax/parallax-0.png');"></div>
 <div class="section-parallax parallax-01" style="background-image: url('http://www.ivang-design.com/svg-load/parallax/parallax-01.png');"></div>
 
@@ -87,7 +99,7 @@
       <div class="row">
         <div class="col-12 text-center parallax-fade-top">
           <p>we do magic</p>	
-          <h1>chase your<br>dream</h1>
+          <h1>choose your<br>dream</h1>
         </div>
       </div>	
     </div>
@@ -179,6 +191,30 @@
 
 </div>
 </div>
+                                            <!-- LargeMenu -->
+
+<div class="largeMenu">
+  <div class="leftGIF"> 
+    <img src="media/IMG/1.gif">
+  </div>
+  <div class="rightMenu">
+    <ul class="menu_large_ul">
+      <li class="menu_large_li" style="--i: 5"><a href="#" class="menu_large_a">GitHub</a></li>
+      <li class="menu_large_li" style="--i: 4"><a href="#" class="menu_large_a">CodePen</a></li>
+      <li class="menu_large_li" style="--i: 3"><a href="#" class="menu_large_a">SketchFab</a></li>
+      <li class="menu_large_li" style="--i: 2"><a href="#" class="menu_large_a">Contact</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+                                            <!-- Information Block -->
+<div class="info">
+  <div class="MainInfo">
+
+  </div>
+</div>
+
 
 
     <!-- Библиотеки -->
@@ -190,6 +226,7 @@
     <!-- Скрипты -->
     <script src="JS/body.js"></script>
     <script src="js/Navigation.js"></script>
+    <script src="js/preloader.js"></script>
 
 
 </body>

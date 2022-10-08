@@ -173,6 +173,9 @@
      opacity: 0.35;
      -webkit-transition: all 200ms linear;
      transition: all 200ms linear;
+     color: #fff;
+     text-transform: uppercase;
+     text-decoration: none;
  }
  .project-link-wrap:hover p{
      opacity: 0.15;
@@ -468,3 +471,19 @@
      border-radius: 50%;
      box-shadow: 0 0 0 20px rgba(255,255,255,.1);
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
