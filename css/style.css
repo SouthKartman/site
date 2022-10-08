@@ -48,7 +48,8 @@
 }
 		/* Загаловок */
 .mainheader
-{
+{	
+	z-index: 5;
 	display: flex;
     width: 100%;
     height: 5rem;

@@ -17,6 +17,7 @@ body {
 }
 .large_menu {
 	position: relative;
+	z-index: 20rem;
   }
   .large_menu li {
 	list-style: none;
