@@ -19,7 +19,14 @@
 :root
 {   
     --accent: #202020;
-	
+	/* --background-dark: #2d3548; */
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
 	--accent-light: #ff8d09;
 	--accent-dark: #f38506;
     --maincolor: #101010;
@@ -35,7 +42,8 @@
 	--middle-gray: rgba(111, 122, 139, 0.75);
 	--text-light: #999999;
 	--regular-text: 16px;
-	--small-text: 14px;
+	--big-text:4vmin;
+	--small-text: 15px;
 	--lineheight: 1.75;
 	--userfont: raleway-wt, sans-serif,12px;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
@@ -55,6 +63,7 @@
     height: 5rem;
     background: var(--maincolor);
 	position: fixed;
+	
 	
 }
 .dopmenu
@@ -535,7 +544,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   }
   .leftGIF
   {
-	justify-content: left;
+	justify-content: center;
 	width: 50%;
 	
   }
@@ -641,3 +650,380 @@ body.nav-active .nav__list-item:nth-child(10) {
 	  display: none;
 	}
   }
+
+  /* about */
+
+.profileright
+{
+	width: 30%;
+}
+
+.profileleft
+{
+	width: 30%;
+}
+
+.profile
+{
+	width: 40%;
+	align-items: center;
+}
+ #profile
+ {
+	height: 400px;
+	min-width: 100px;
+	max-width: 900px;
+	border-radius: 100rem;
+	align-items: center;
+ }
+ .MainImage
+ {
+	display: flex;
+	padding: 8rem 0 3rem 0;
+ }
+
+
+
+
+ .profile {
+	position: relative;
+	padding-top: 40.25%; /* 16:9 Aspect Ratio */
+  }
+  #profile {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+  }
+  .Text_Protfolio
+  {
+	text-align: center;
+	margin: 0 4rem 4rem 4rem;
+  }
+  .Title{
+	font-size: var(--big-text);
+	color: white;
+  }
+  .doptitle
+  {
+	color: rgb(152, 152, 152);
+	padding: 2rem;
+	font-size: var(--small-text);
+  }
+  .aboutblock
+  {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+	color: whitesmoke;
+	
+  }
+  .aboutblock .workabout
+  {
+	min-width: 33.3%;
+	flex: 1 1 400px; 
+    
+  }
+  .aboutblock .Entartainmen
+  {
+	min-width: 33.3%;
+	flex: 1 1 400px; 
+  }
+  .aboutblock .aboutmyself
+  {
+	min-width: 33.3%;
+	flex: 1 1 400px; 
+  }
+  .aboutblock .workabout hr
+  {
+	background-color: whitesmoke;
+	width: 19vmax;
+	text-align: center;
+	
+  }
+  .aboutblock .Entartainmen hr
+  {
+	background-color: whitesmoke;
+	width: 19vmax;
+	text-align: center;
+  }
+  .aboutblock .aboutmyself hr
+  {
+	text-align: center;
+	background-color: whitesmoke;
+	text-align: center;
+	width: 20vmax;
+  }
+  hr {
+	height: 2px;
+	border: none;
+	text-align: center; /* для ie */
+	margin: auto; /* для остальных браузеров */
+	}
+	
+#mytitle
+{
+	text-decoration: underline 4px #6f42c1;
+	
+}
+
+.textblock
+{
+	margin: 2rem 1rem 8rem 1rem;
+	/* width: 20rem; */
+	text-align: center;
+	/* justify-content: center; */
+}
+#text
+{
+	font-size: var(--small-text) ;
+}
+.SpcecialBlock
+{	
+	/* display: flex;
+	text-align: center;
+	color: whitesmoke; */
+}
+.SpecTitle
+{
+	display: flex;
+	text-align: center;
+	color: whitesmoke;
+}
+.hrR
+{	
+	
+	width: 35%;
+	height: 2px;
+	border: none;
+	text-align: center; /* для ie */
+	margin: auto; /* для остальных браузеров */
+	background: linear-gradient( to right, rgb(255, 255, 255), #1f2029);
+	/* background: linear-gradient(to right, red, yellow); */
+	/* margin-right: 5rem; */
+	
+}
+.hrL
+{	
+	width: 35%;
+	height: 2px;
+	border: none;
+	text-align: center; /* для ie */
+	margin: auto; /* для остальных браузеров */
+	color: white;
+	background-color: white;
+	background: linear-gradient( to left, rgb(255, 255, 255), #1f2029);
+	/* background: linear-gradient(to right, red, yellow); */
+	/* margin-right: 5rem; */
+}
+.TitleSpec
+{
+	width: 40%;
+}
+.blocks
+{
+	width: 100%;
+	/* background-color: white; */
+	/* height: 10rem; */
+	display: flex;
+}
+.blockcontent
+{
+	width: 33.3%;
+	border-radius: 5rem;
+	height: 20rem;
+	margin: 6rem;
+	
+}
+#design
+{
+	background-color: #8A24EF;
+}
+#programming
+{
+	background-color: #FFC700;
+}
+#other
+{
+	background-color: #04A5FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .container {
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 80px; }
+  
+  /***********************************UNIVERSAL STYLES***********************************/
+  
+  
+  @media screen and (max-width: 760px) {
+	.container {
+	  padding-right: 25px;
+	  padding-left: 25px; } }
+  
+
+  
+  /* .accent-text {
+	font-family: "Dancing Script", cursive;
+	color: #E52E2D; }
+  
+  
+  h2 {
+	margin-bottom: 20px; }
+  
+  h3 {
+	margin-top: 20px;
+	margin-bottom: 10px; }
+  
+  p {
+	font-size: 16px;
+	line-height: 1.6;
+	color: #a3a3a3; }
+  
+  ul {
+	list-style: none; }
+  
+  li {
+	display: inline-block; }
+  
+  a {
+	text-decoration: none; }
+   */
+
+  
+ 
+  
+  
+  
+  
+  
+  /***********************************SERVICES STYLES***********************************/
+  #services {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	list-style: none; 
+	font-size: 16px;
+	line-height: 1.6;
+	color: whitesmoke; 
+	display: inline-block;
+	font-family: "Dancing Script", cursive;
+	text-decoration: none;
+	 }
+  
+  .service-block {
+	padding: 20px; }
+	.service-block .icon {
+	  color: #E52E2D;
+	  font-size: 40px;
+	  opacity: 0;
+	  -webkit-transform: translateY(-20px);
+	  -ms-transform: translateY(-20px);
+	  transform: translateY(-20px);
+	  -webkit-transition: all .3s ease-out;
+	  -o-transition: all .3s ease-out;
+	  transition: all .3s ease-out; }
+	.service-block .service-icon-animate {
+	  opacity: 1;
+	  -webkit-transform: translateY(0);
+	  -ms-transform: translateY(0);
+	  transform: translateY(0); }
+  
+  .hb:nth-child(1), .hb:nth-child(2), .hb:nth-child(3) {
+	border-bottom: 1px #a3a3a3 solid; }
+  
+  @media screen and (max-width: 991px) {
+	.hb:nth-child(-n+4) {
+	  border-bottom: 1px #a3a3a3 solid; } }
+  
+  @media screen and (max-width: 768px) {
+	.hb:nth-child(5) {
+	  border-bottom: 1px #a3a3a3 solid; } }
+  
+  .vb:nth-child(1), .vb:nth-child(2), .vb:nth-child(4), .vb:nth-child(5) {
+	border-right: 1px #a3a3a3 solid; }
+  
+  @media screen and (max-width: 991px) {
+	.vb:nth-child(1), .vb:nth-child(2), .vb:nth-child(4), .vb:nth-child(5) {
+	  border-right: none; }
+	.vb:nth-child(2n+1) {
+	  border-right: 1px #a3a3a3 solid; } }
+  
+  @media screen and (max-width: 768px) {
+	.vb:nth-child(-n+6) {
+	  border-right: none; } }
+  
+  
+  
+  /*  */
