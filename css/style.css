@@ -44,7 +44,8 @@
 	--text-light: #999999;
 	--regular-text: 16px;
 	--big-text:4vmin;
-	--small-text: 15px;
+	--medium-text:2.5vmin;
+	--small-text: 1.9vmin;
 	--lineheight: 1.75;
 	--userfont: raleway-wt, sans-serif,12px;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
@@ -974,7 +975,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   
   .skillsblock
   {
-	min-height: 100vh;
+	/* min-height: 100vh; */
     
     /* display: flex; */
     justify-content: center;
@@ -991,7 +992,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   .sectionskills{
     display: flex;
     flex-wrap: wrap;
-	margin: 8rem 1rem 5rem 1rem;
+	margin: 8rem 1rem 0rem 1rem;
 	
 }
 #containerskills{
@@ -1245,6 +1246,8 @@ body.nav-active .nav__list-item:nth-child(10) {
 	{
 		width: 100%;
 	}
+
+
   }
 
   @media screen and (max-width: 980px) {	
@@ -1253,6 +1256,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 		width: 100%;
 		
 	}
+	
 	#scrollsbars
 	{
 		margin: 4rem;
@@ -1264,6 +1268,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 	font-size: 2.5vmin;
 		
 	}
+	
   }
  
 @media screen and (min-width: 990px) 
@@ -1277,6 +1282,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 		margin-top: 0rem;
 	
 	}	
+	
 }
 
 
@@ -1285,6 +1291,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 .advantages {
 	padding: 80px 0 50px;
+	
 }
 .advantages__item-wrapper {
 	margin-bottom: var(--gutter);
@@ -1388,10 +1395,37 @@ body.nav-active .nav__list-item:nth-child(10) {
 .aboutskills
 {
 	width: 90%;
-	height: 5rem;
+	height: 100%;
 	background-color: #121212;
 	border-radius: 3rem 3rem 0 0;
 	margin: 5rem auto;
+	display: flex;
+	color: white
+	;
+	
+}
+
+.item{
+margin: 4% 3% 3% 6%;
+display: flex;
+}
+.number
+{
+	font-size:4vmin;
 	
 	
 }
+.text_number
+{
+	padding-top: 3% ;
+	padding-bottom:3% ;
+	font-size: var(--small-text);
+	padding-left:1.2rem ;
+}
+
+
+
+
+
+
+/* TimeLine */
