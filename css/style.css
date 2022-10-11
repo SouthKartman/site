@@ -2,6 +2,7 @@
 {
     margin: 0rem;
     padding:0rem;
+	
 }
 
 @font-face {
@@ -850,74 +851,6 @@ body.nav-active .nav__list-item:nth-child(10) {
 	background-color: #04A5FF;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
   .container {
 	margin: auto;
@@ -1025,5 +958,440 @@ body.nav-active .nav__list-item:nth-child(10) {
 	  border-right: none; } }
   
   
+
+
+
+
+
+
+
+
+
+
+
+
+	  
   
-  /*  */
+  .skillsblock
+  {
+	min-height: 100vh;
+    
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* padding: 0 10rem; */
+	/* width: 100%; */
+	height: 100%;
+	/* display:flex ; */
+	/* background-color: white; */
+	color: whitesmoke;
+  }
+
+  .sectionskills{
+    display: flex;
+    flex-wrap: wrap;
+	margin: 8rem 1rem 5rem 1rem;
+	
+}
+#containerskills{
+  
+	width: 30%;
+    height: 600px;
+   
+	flex: 1 1 1 wrap;
+	margin: auto;
+	justify-content: center;
+}
+
+  ::selection{
+    /* background-color: #000; */
+    color: whitesmoke;
+}
+.sectionskills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading{
+    text-align: center;
+    /* text-decoration: underline;
+    text-underline-offset: 10px; */
+    /* text-decoration-thickness: 5px; */
+    margin-bottom: 50px;
+}
+
+.horizontal-bars .bar{
+    margin: 40px 0;
+}
+.horizontal-bars .bar:first-child{
+    margin-top: 0;
+}
+.horizontal-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.horizontal-bars .bar .info{
+    margin-bottom: 5px;
+}
+.horizontal-bars .bar .info span{
+    font-size: 15vmin;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;   
+    opacity: 0;
+}
+
+.horizontal-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.horizontal-bars .bar .progress-line span{
+    height: 100%;
+    background-color: purple;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.PhotoShop span{
+    width: 50%;
+}
+.progress-line.JS span{
+    width: 40%;
+}
+.progress-line.PHP span{
+    width: 15%;
+}
+.progress-line.CPL span{
+    width: 30%;
+}
+.progress-line.CSH span{
+    width: 20%;
+}
+.progress-line.Java span{
+    width: 10%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.3vmin;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;   
+    opacity: 0;
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.PhotoShop span::after{
+    content: "50%";
+}
+.progress-line.JS span::after{
+    content: "40%";
+}
+.progress-line.PHP span::after{
+    content: "15%";
+}
+.progress-line.CPL span::after{
+    content: "25%";
+}
+.progress-line.CSH span::after{
+    content: "15%";
+}
+.progress-line.Java span::after{
+    content: "5%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color:#000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;   
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+.radial-bars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar {
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: purple;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+
+
+@keyframes  animate-path1{
+    100%{
+    stroke-dashoffset: 50;
+    }
+}
+@keyframes  animate-path2{
+    100%{
+    stroke-dashoffset: 175;
+    }
+}
+@keyframes  animate-path3{
+    100%{
+    stroke-dashoffset: 125;
+    }
+}
+@keyframes  animate-path4{
+    100%{
+    stroke-dashoffset: 75;
+    }
+}
+
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+
+}
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+@media screen and (max-width: 1000px) {	
+	.BAR
+		{
+			display: none;
+		}
+	.SpcecialBlock
+	{
+		display: none;
+	}
+	.con-md-6
+	{
+		width: 100%;
+	}
+  }
+
+  @media screen and (max-width: 980px) {	
+	#containerskills
+	{
+		width: 100%;
+		
+	}
+	#scrollsbars
+	{
+		margin: 4rem;
+		font-size: 3vmin;
+		width: 100%;
+	}
+	.progress-line span::after 
+	{
+	font-size: 2.5vmin;
+		
+	}
+  }
+ 
+@media screen and (min-width: 990px) 
+{
+	#scrollsbars
+	{
+		margin: auto;
+		font-size: 2vmin;
+		width: 30%;
+
+		margin-top: 0rem;
+	
+	}	
+}
+
+
+
+  /* ADVANTAGES */
+
+.advantages {
+	padding: 80px 0 50px;
+}
+.advantages__item-wrapper {
+	margin-bottom: var(--gutter);
+}
+.advantages-slider-wrapper {
+	text-align: center;
+}
+.advantages-slider {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	max-width: 440px;
+}
+.advantages-slider img {
+	width: 100%;
+	border-radius: var(--radius-style);
+}
+.advantages-slider::before {
+	content: '';
+	width: 50%;
+	height: 50%;
+	top: -15px;
+	left: -15px;
+	background-color: var(--dark);
+	position: absolute;
+	border-radius: var(--radius-style);
+	opacity: 0.1;
+}
+.advantages-slider__caption {
+	position: absolute;
+	bottom: 60px;
+	z-index: 1;
+	color: #fff;
+	right: -25px;
+	padding: 2px 50px 2px 25px;
+	border-radius: var(--radius-style);
+	font-family: roboto-wt, sans-serif;
+	font-weight: 700;
+	font-size: 52px;
+	overflow: hidden;
+}
+.advantages-slider__caption::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--dark);
+	opacity: 0.9;
+	z-index: -1;
+}
+.advantages-slider__caption span {
+	font-size: 21px;
+	font-family: raleway-wt, sans-serif;
+	font-weight: 300;
+	max-width: 100px;
+	display: inline-block;
+	line-height: 1.2;
+	text-align: left;
+	padding-left: 2px;
+}
+/* ITEM ADVANTAGES */
+
+.item-advantages {
+	height: 100%;
+	position: relative;
+	padding-bottom: 35px;
+}
+.item-advantages__heading {
+	text-decoration: none;
+	color: var(--text);
+	font-size: 19px;
+	font-weight: 800;
+	line-height: 1.2;
+	border-bottom: 1px solid var(--light-div);
+	display: flex;
+	align-items: center;
+	padding-bottom: var(--gutter);
+}
+.item-advantages__heading:hover,
+.item-advantages__heading:active {
+	color: var(--text);
+	text-decoration: underline;
+}
+.item-advantages__heading img {
+	max-width: 70px;
+	max-height: 48px;
+	margin-right: 15px;
+}
+.item-advantages__desc {
+	font-size: var(--small-text);
+	margin: 0;
+	margin-top: 15px;
+}
+.item-advantages__more {
+	position: absolute;
+	bottom: 0;
+}
+
+.aboutskills
+{
+	width: 90%;
+	height: 5rem;
+	background-color: #121212;
+	border-radius: 3rem 3rem 0 0;
+	margin: 5rem auto;
+	
+	
+}
