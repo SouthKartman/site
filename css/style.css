@@ -3,8 +3,34 @@
     margin: 0rem;
     padding:0rem;
 	
+	
 }
 
+
+
+
+
+body::-webkit-scrollbar {
+	width: 12px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+	background: black;  
+	/* background-color: #1f2029; */
+	      /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+	background-color: rgb(39, 39, 74);    /* цвет плашки */
+	border-radius: 20px;       /* закругления плашки */
+	border: 3px solid;  /* padding вокруг плашки */
+	z-index: 100;
+  }
+
+
+
+body
+{
+	background-color: #1f2029;
+}
 @font-face {
     font-family: 'Coming Soon';
     src: url('fonts/ComingSoon-Regular.eot');
@@ -1860,89 +1886,224 @@ display: flex;
   
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* gallery */
 
-  .Gallery
-  {
-	
-	align-items: center;
-  width: 100%;
-  }
-  .GalleryCard
-  {
-	width: 100%;
-	display: flex;
-  }
-  .image {
-	position: relative;
-	width: 280px; 
-	/* margin: 2rem auto; */
-  }
-  .image__img {
-	display: block;
-	width: 100%;
-	border-radius: 2%;
-	box-shadow: 35px 35px 70px rgba(9,148,255,0.25),
-	-20px -20px 40px rgba(9,148,255,0.1),
-	inset -25px -25px 70px rgba(139, 199, 245, 0.664);
-  }
-  .image__overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+
+.gallery
+{
+	/* width: 100%; */
 	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	color: #ffffff;
-	font-family: 'Quicksand', sans-serif;
-	display: flex;
-	flex-direction: column;
-	border-radius: 2%;
-	align-items: center;
-	justify-content: center;
-	opacity: 0;
-	transition: opacity 0.25s;
+	background-color: #1f2029;
+
+}
+#container {
+	margin: auto;
   }
-  .image__overlay--blur {
-	backdrop-filter: blur(5px);
+  
+  
+  .grid-item {
+  display: inline-block;
+	  height: 259px;
+  
+	  overflow: hidden;
+	  text-align: center;
+	  width: 400px;
   }
-  .image__overlay--primary {
-	 background-color: rgba(255, 255, 255, 0.5);
+  .grid-item img{
+	  width:100%;
+	  height:auto;
+	  filter: url(filters.svg#grayscale);
+	  filter: gray;
+	  -webkit-filter: grayscale(1);
+	  transition: 0.9s;
   }
-  .image__overlay > * {
-	transform: translateY(20px);
-	transition: transform 0.25s;
+  .grid-item img:hover{
+	  filter: none;
   }
-  .image__overlay:hover {
+  
+  .isotope-pager .pager {
+	display: inline-block;
+  }
+  .filters {
+	  width: 100%;
+	  text-align: center;
+	  padding-bottom: 35px;
+	  padding-top:20px;
+	  
+  }
+  
+  .filters ul {
+	  list-style: none;
+	  padding: 20px 10px;
+	  box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+	  margin: 0 40px;
+	  border-radius: 30px;
+	  background-color: #232323;
+  }
+  
+  .filters li {
+	  display: inline-block;
+	  padding: 10px 25px;
+	  font-size: 15px;
+	  font-weight: 600;
+	  cursor: pointer;
+  }
+  .filters li a{
+	  color: #b6b6b6;
+	  text-decoration: none;
+  }
+  .filters li a:hover{
+	  color:#fff;
+  }
+  
+  .filters li:hover {
+	  box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+	  border-radius: 15px;
+  }
+  
+  .filters li.active a{
+	  color: #e3ca66;
+	  border: 1px solid #e3ca66;
+	  border-radius: 15px;
+	  box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+	  padding: 10px 25px;
+	  
+  }
+  
+  
+  
+  .isotope-pager a{
+	margin: 6px 1px;
+	  display: inline-block;
+	  width: 50px;
+	  /* height: 60px; */
+	  line-height: 31px;
+	  color: #b6b6b6;
+	  font-weight: 600;
+	  transition: 0.3s;
+	  /* position: relative; */
+	  /* padding-right: 26px; */
+	  box-shadow: -1px 1px 11px rgba(0,0,0,.1);
+	  border-radius: 25px;
+	  background-color: #232323;
+	  border: .5px solid #e3ca66;
+	  text-decoration:none;
+  }
+  
+  .isotope-pager a:hover{
+	color: #fff;
+	border: .5px solid #ffeeac;
+	box-shadow: -1px 1px 10px 3px rgba(0,0,0,.1);
+  }
+  
+  .isotope-pager .active{
+	color: #e3ca66 !important;
+	  box-shadow: -1px 1px 10px 5px rgba(0,0,0,.1);
+	  border-radius: 25px;
+	  background-color: #161616;
+	  border: 1px dotted #e3ca66;
+  }
+  
+  .isotope-pager .prev{
+	border-radius: 30px 0 0 30px;
+  }
+  
+  .isotope-pager .next{
+	border-radius: 0 30px 30px 0;
+  }
+  
+  .isotope-pager a::before,.isotope-pager a:after{
+	content: "";
+	position: absolute;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+  }
+  .isotope-pager .num::before,.next::before{
+	border-right: 20px solid #2c3e50;
+	right: 100%;
+  }
+  
+  .isotope-pager .num:after,.prev:after{
+	border-right: 20px solid #f1f1f1;
+	right: 0;
+  }
+  
+  
+  
+  
+  
+  .overlay {
+	position: absolute; 
+	bottom: 0; 
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1; 
+	width: 100%;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .grid-item:hover .overlay {
 	opacity: 1;
   }
-  .image__overlay:hover > * {
-	transform: translateY(0);
-  }
-  .image__title {
-	font-size: 3.5vmin;
-	font-weight: bold;
-  color:#000;
-  }
-  .image__description {
-	font-size: 1.9vmin;
-	margin-top: 0.25em;
-  color:#000;
-  }
 
 
+  /*
 
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
 
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
 
-
-
-
-
-
-
-
-
-
+*/
 
 
 
@@ -2101,7 +2262,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_one {
-    background: url(".../Media/IMG/volks1.gif") no-repeat center center;
+    background: url("") no-repeat center center;
     width: 330px;
     height: 105px;
   background-size:100%;
@@ -2154,3 +2315,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*************footer End*****************/
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
+	margin: 0;
+  }
+  
+  /* .gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+	grid-gap: 2em;
+	padding: 2em;
+	pointer-events: none;
+  } */
+	.img {
+	  display: block;
+	  width: 100%;
+	  border-radius: .25em;
+	  transition: 250ms 50ms;
+	  pointer-events: auto;
+	}
+	
+	.img:hover img:not(:hover) {
+	  filter: saturate(.2) opacity(.5);
+	}
+  
