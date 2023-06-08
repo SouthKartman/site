@@ -1,0 +1,115 @@
+$logo_color: #DC2A49
+$pink_color: #FF597A
+$header_color: #66ACFF
+
+body
+    background-image: url("../icons/repeat.png")
+nav
+    height: 100px
+    background-color: $header_color
+    .logo
+        display: inline-block
+        max-height: 100%
+        max-width: 100%
+        float: left
+        padding: 20px 0 20px 50px
+    .menu
+        padding-top: 30px
+        display: flex
+        justify-content: center
+        &_item
+            list-style-type: none
+            .menu_link
+                position: relative
+                text-decoration: none
+                font-family: 'Roboto'
+                font-style: normal
+                font-weight: 500
+                font-size: 30px
+                color: #F5EAEA
+                margin-right: 50px
+                &:hover
+                    color: white
+                    i
+                        transition: 0.5s all
+                        color: $logo_color
+            .menu_link:after
+                content: " "
+                position: absolute
+                background-color: $logo_color
+                height: 5px
+                width: 0
+                left: 0
+                bottom: -10px
+                border-radius: 5px
+                transition: 0.5s all
+            .menu_link:hover:after
+                width: 100%
+            i 
+                margin-right: 5px
+.about
+    padding: 40px 0 150px 0
+    min-height: 900px
+    .title
+        font-family: 'Roboto'
+        font-weight: 900
+        font-size: 48px
+        text-align: center
+        color: $header_color
+        span
+            color: $pink_color
+            font-size: 70px
+    &_item
+         margin-top: 50px
+    .margin-top-150
+        margin-top: 150px
+    &_img
+        margin-right: 60px
+        width: 314px
+        height: 314px
+        float: left
+    &_item_descr
+        padding-top: 50px
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 500
+        font-size: 36px
+        color: #66ACFF
+        text-align: center
+    &_item_btn
+        display: inline-block
+        background-color: #26DC5D
+        padding: 20px 40px 20px 40px
+        border-radius: 12px
+        text-decoration: none
+        font-family: 'Roboto'
+        font-weight: 400
+        font-size: 36px
+        color: #FFFFFF
+        margin-left: 370px
+        margin-top: 30px
+        &:hover
+            transition: 1s all
+            background-color: #DC264A
+            color: #FFFFFF
+footer
+    height: 50px
+    background-color: $header_color
+    .footer_wrapper
+        display: flex
+        justify-content: space-evenly
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 500
+        font-size: 30px
+        color: #FFFFFF
+        .menu_link
+            text-decoration: none
+            color: #FFFFFF
+
+            &:hover
+                color: $logo_color
+                transition: 0.5s all
+                i
+                    color: $logo_color
+                    transition: 0.5s all
